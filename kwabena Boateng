@@ -1,0 +1,142 @@
+#include <cstdlib>
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main ()
+{
+    int productId, customerId, employeeId,managerId;
+    string productName, customerName, employeeName, customerAddress, employeeAddress, managerName, managerTitle;
+    double unitPrice;
+    int quantity;
+    int customerNumber, employeeNumber, managerNumber;
+    int answer;
+    char ans = 'Y';
+
+     while (ans == 'Y')
+     {
+          cout << "List Of Items Menu" << endl;
+          cout << ".................." << endl;
+          cout << "1. Product" << endl;
+          cout << "2. Customer" << endl;
+          cout << "3. Employee" << endl;
+          cout << "4. Management" << endl;
+          cout << "Choose From The Options [1-4]" << endl;
+          cin >> answer;
+
+          switch (answer)
+          {
+               case 1:
+                     //Declaring the Product Id
+                     cout << "Enter Product Id" << endl;
+                     cin >> productId;
+
+                    //Declaring the Product Name
+                     cout << "Enter Product Name" << endl;
+                    getline (cin, productName);
+
+                    //Declaring the Unit Price
+                    cout << "Enter Unit Price" << endl;
+                    cin >> unitPrice;
+
+                    //Declaring Product Quantity
+                     cout << "Enter Quantity" << endl;
+                     cin >> quantity;
+
+                     cout << "The Values Entered Are..." << endl;
+                     cout << "........................." << endl;
+                     cout << "Product Id..............." << productId << endl;
+                     cout << "Product Name............." << productName << endl;
+                     cout << "Unit Price..............." << unitPrice << endl;
+                     cout << "Quantity................." << quantity << endl;
+
+                     double total;
+                     total = unitPrice * quantity;
+
+                     //Amount to be Paid
+                     cout << "Amount to Paid is........" << total << endl;
+                      break;
+
+                case 2:
+                     //Declaring the Customer Id
+                    cout << "Enter Customer Id" << endl;
+                    cin >> customerId;
+
+                     //Declaring Customer Name
+                     cout << "Enter Customer Name(s)" << endl;
+                     getline (cin, customerName);
+
+                     //Declaring Customer Address
+                     cout << "Enter Customer Address" << endl;
+                     getline (cin, customerAddress);
+
+                     //Declaring Customer Contact Number
+                     cout << "Enter Customer Contact Number" << endl;
+                     cin >> customerNumber;
+            
+                      // Customer Details Collected
+                     cout << "The Customer Details Entered" << endl;
+                     cout << "............................" << endl;
+                     cout << "Customer Id................." << customerId << endl;
+                     cout << "Customer Name..............." << customerName << endl;
+                     cout << "Customer Address............" << customerAddress << endl;
+                     cout << "Customer Contact Number....." << customerNumber << endl;
+                     break;
+
+               case 3:
+                     //Declaring Employee Id
+                     cout << "Enter Employee Id" << endl;
+                     cin >> employeeId;
+
+                     //Declaring Employee Name
+                     cout << "Enter Employee Name" << endl;
+                     getline (cin,employeeName);
+
+                     //Declaring Employee Address
+                     cout << "Enter Employee Address" << endl;
+                     getline (cin, employeeAddress);
+
+                     //Declaring Employee Contact Number
+                     cout << "Enter Employee Contact Number" << endl;
+                     cin >>employeeNumber;
+
+                     cout << "Details Entered Are......." << endl;
+                     cout << ".........................." << endl;
+                     cout << "Employee Id..............." << employeeId << endl;
+                     cout << "Employee Name............." << employeeName << endl;
+                     cout << "Employee Address.........." << employeeAddress << endl;
+                     cout << "Employee Contact Number..." << employeeNumber << endl;
+                     break;
+
+               case 4:
+                     //Declaring Manager Id
+                     cout << "Enter Managers Id" << endl;
+                     cin >> managerId;
+
+                     //Declaring Manager Name
+                     cout << "Enter Managers Name" << endl;
+                     getline (cin, managerName);
+
+                     //Declaring Manager Title
+                     cout << "Enter Managers Title" << endl;
+                     getline (cin, managerTitle);
+
+                     //Declaring Manager Contact Number
+                     cout << "Enter Managers Contact Number" << endl;
+                     cin >> managerNumber;
+
+                     cout << "Details Entered Are.........." << endl;
+                     cout << "............................." << endl;
+                     cout << "Manager Id..................." << managerId << endl;
+                     cout << "Manager Name................." << managerName << endl;
+                     cout << "Manager Title................" << managerTitle << endl;
+                     cout << "Manager Contact Number......." << managerNumber << endl;
+                     break;
+          }
+     
+             
+
+
+     }
+    return 0;
+}
